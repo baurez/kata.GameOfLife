@@ -7,8 +7,8 @@ namespace GolDll
 {
     public class GameOfLife
     {
-        const string deadcell = ".";
-        const string livingcell = "0";
+        public const string deadcell = " ";
+        public const string livingcell = "0";
 
         public void RandomizeLivingCells()
         {
