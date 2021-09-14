@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GolDll", "GolDll\GolDll.csproj", "{75B3D54C-5F57-4850-9929-11074B50F8FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GolTest", "GolTest\GolTest.csproj", "{B8A67910-0D43-42F9-AF91-823E670D63D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GolConsole", "GolConsole\GolConsole.csproj", "{69C8665D-2FA3-4D1D-ACCA-6F9C64C0EC20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75B3D54C-5F57-4850-9929-11074B50F8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B3D54C-5F57-4850-9929-11074B50F8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B3D54C-5F57-4850-9929-11074B50F8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B3D54C-5F57-4850-9929-11074B50F8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A67910-0D43-42F9-AF91-823E670D63D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A67910-0D43-42F9-AF91-823E670D63D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A67910-0D43-42F9-AF91-823E670D63D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A67910-0D43-42F9-AF91-823E670D63D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C8665D-2FA3-4D1D-ACCA-6F9C64C0EC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C8665D-2FA3-4D1D-ACCA-6F9C64C0EC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C8665D-2FA3-4D1D-ACCA-6F9C64C0EC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C8665D-2FA3-4D1D-ACCA-6F9C64C0EC20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79300ED1-7A7F-4417-91BE-9A4A8CC3F478}
+	EndGlobalSection
+EndGlobal
