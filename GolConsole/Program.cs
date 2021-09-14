@@ -1,7 +1,6 @@
 ﻿using GolDll;
 
 using System;
-using System.Diagnostics;
 
 namespace GolConsole
 {
@@ -9,14 +8,13 @@ namespace GolConsole
     {
         static void Main(string[] args)
         {
-            var g = new GameOfLife(20,20);
+            var g = new GameOfLife(20, 20);
 
-            g.RandomizeLivingCells();           
-
-
+            g.RandomizeLivingCells();
 
             Console.Write(g.ToString());
             Console.CursorVisible = false;
+
 
             for (int i = 0; i < 1000; i++)
             {
