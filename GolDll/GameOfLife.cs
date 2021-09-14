@@ -28,7 +28,7 @@ namespace GolDll
         private int totalRows;
         private int totalColumns;
 
-        private IList<Cell> cells = new List<Cell>();
+        private Cell[,] cells;
 
         public GameOfLife(int rows, int columns)
         {
@@ -58,7 +58,7 @@ namespace GolDll
 
         public void generateNextStep()
         {
-            var newCells = getEmptyMatrice(this.totalRows, this.totalColumns).ToList();
+            var newCells = getEmptyMatrice(this.totalRows, this.totalColumns);
 
             foreach (Cell item in newCells)
             {
@@ -98,14 +98,14 @@ namespace GolDll
             this.cells = newCells;
         }
 
-        private IList<Cell> getEmptyMatrice(int rows, int columns)
+        private Cell[,] getEmptyMatrice(int rows, int columns)
         {
-            var result = new List<Cell>();
+            var result = new Cell[rows, columns];
             for (int i = 0; i < totalRows; i++)
             {
                 for (int j = 0; j < totalColumns; j++)
                 {
-                    result.Add(new Cell(i, j, false));
+                    result[i, j] = new Cell(i, j, false);
                 }
             }
             return result;
@@ -113,7 +113,9 @@ namespace GolDll
 
         private Cell getCell(int x, int y)
         {
-            return cells.Where(_c => _c.x == x && _c.y == y).FirstOrDefault();
+            if (x < 0 || y < 0 || x >= cells.GetLength(0) || y >= cells.GetLength(1))
+                return null;
+            return (Cell)cells.GetValue(x, y);
         }
 
         public void SetAliveCell(int x, int y)

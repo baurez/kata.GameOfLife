@@ -9,28 +9,28 @@ namespace GolConsole
     {
         static void Main(string[] args)
         {
-            var g = new GameOfLife(32,32);
+            var g = new GameOfLife(20,20);
 
             g.RandomizeLivingCells();           
 
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    g.SetAliveCell(i,i);
-            //    g.SetAliveCell(i, i + 1);
-            //    g.SetAliveCell(i, i - 1);
-            //}
 
 
             Console.Write(g.ToString());
+            Console.CursorVisible = false;
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 1000; i++)
             {
-                System.Threading.Thread.Sleep(100);
+                Console.SetCursorPosition(0, 0);
+                //var sw = new Stopwatch();   
+                //sw.Start(); 
                 g.generateNextStep();
-                
-                Console.Clear();
-                Console.Write(g.ToString());    
+                //Console.WriteLine(sw.Elapsed.ToString());
+                //Console.SetCursorPosition(0, 32*i);
+                Console.Write(g.ToString());
+
+                System.Threading.Thread.Sleep(1000);
             }
+
             Console.Write(g.ToString());
             Console.Clear();
 
