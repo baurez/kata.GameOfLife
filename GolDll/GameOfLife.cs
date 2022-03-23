@@ -25,8 +25,8 @@ namespace GolDll
 
         }
 
-        private int totalRows;
-        private int totalColumns;
+        private readonly int totalRows;
+        private readonly int totalColumns;
 
         private Cell[,] cells;
 
