@@ -125,7 +125,7 @@ namespace GolDll
                 c.alive = true;
         }
 
-        private class Cell
+        private sealed class Cell
         {
             public Cell(int x, int y, bool alive)
             {
