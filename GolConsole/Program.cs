@@ -4,7 +4,7 @@ using System;
 
 namespace GolConsole
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
@@ -19,13 +19,8 @@ namespace GolConsole
             for (int i = 0; i < 1000; i++)
             {
                 Console.SetCursorPosition(0, 0);
-                //var sw = new Stopwatch();   
-                //sw.Start(); 
                 g.generateNextStep();
-                //Console.WriteLine(sw.Elapsed.ToString());
-                //Console.SetCursorPosition(0, 32*i);
                 Console.Write(g.ToString());
-
                 System.Threading.Thread.Sleep(1000);
             }
 
